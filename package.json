@@ -1,0 +1,31 @@
+{
+  "name": "dfrws",
+  "version": "1.0.0",
+  "description": "IoT forensic tool development project",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.14",
+    "oui": "^7.0.27",
+    "sqlite3": "^3.1.13",
+    "dedupe": "^2.1.0",
+    "fs-exists-sync": "^0.1.0",
+    "electron": "^1.7.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimtaehong/IoTInsight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimtaehong/IoTInsight/issues"
+  },
+  "homepage": "https://github.com/kimtaehong/IoTInsight#readme",
+  "devDependencies": {
+    "electron-rebuild": "^1.7.3"
+  }
+}

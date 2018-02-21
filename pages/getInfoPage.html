@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IoTInsight</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="stylesheet" href="../dist/css/getInfoPage.css" />
+  <link rel="stylesheet" href="../dist/css/map.css" />
+  <link rel="stylesheet" href="../dist/css/loading.css" />
+
+</head>
+
+<body>
+
+  <form id="signup" action="somewhere" method="POST">
+
+    <ul id="section-tabs">
+      <li class="current active"><span>1.</span> Basic Info</li>
+      <li><span>2.</span> smartthings</li>
+      <li><span>3.</span> amazon echo</li>
+      <li><span>4.</span> Final Confirm</li>
+    </ul>
+
+    <div id="fieldsets">
+
+      <!-- Basic Info Page -->
+      <fieldset class="current">
+        <h3>1. Enter the directory path</h3>
+        <form>
+          <input type="file" id="SearchDirButton" style="display: none" webkitdirectory />
+          <input type="text" class="form-control" id="getDirInput" readonly placeholder="Click here to enter the Directory" />
+        </form> <!-- /.input directory -->
+        <h3>2. Enter your time zone</h3>
+        <form>
+          <div id="getTimeZone" style="width:100%"></div>
+        </form>
+      </fieldset> <!-- end of Basic Info Page -->
+
+      <!-- Samsung Smartthings -->
+      <fieldset class="next">
+        <h3>1. How to create a Samsung Smartthings token</h3>
+        <h4>Step 1. Access to https://account.smartthings.com/login and login SmartThings server.</h4>
+        <h4>Step 2. Access to https://account.smartthings.com/tokens and click “Generate new token”</h4>
+        <h4>Step 3. Select “Authorized Scopes” as Devices, InstalledApps, Location, Apps, Device Profiles, Schedules and Scenes as list and read options.</h4>
+        <h4>Step 4. After generate new token, copy token and paste.</h4>
+        <p>Would you like to collect Smartthings information?<br>
+          <label><input type='radio' name='smartthings' class='smartthings-radio' value='yes'/>Yes</label>
+          <label><input type='radio' name='smartthings' class='smartthings-radio' value='no'/>No</label>
+        </p>
+        <input type="text" id='smartthings-token-input' placeholder="Enter your token" style="display: none"/>
+      </fieldset>
+
+      <!-- Amazon Echo -->
+      <fieldset class="next">
+        <h3>1. How to get Amazon echo (Alexa) data</h3>
+        <h4>Step 1. If you want to collect, click 'yes' among the buttons below and click the button on the bottom right.</h4>
+        <h4>Step 2. When the Amazon website appears, Log-in to your account at that site.</h4>
+        <h4>Step 3. After log-in, lower the Amazon page. Do not exit this page.</h4>
+        <h4>Step 4. Press the Next button to proceed.</h4>
+        <p>Would you like to collect Amazon Echo information?<br>
+          <label><input type='radio' name='alexa' class='alexa-radio' value='yes'/>Yes</label>
+          <label><input type='radio' name='alexa' class='alexa-radio' value='no'/>No</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="next">
+        <strong class="loading-final">Loading…</strong>
+        <strong class="text-final" style="display:none;">Finish Please push Button.</strong>
+        <strong class="text-final" style="display:none;">Please Wait A Moment.</strong>
+      </fieldset>
+
+      <a class="btn btn-basic-info" style="display:none;">Next Section ▷</a>
+      <a class="basic-info-loading" style="display:none;">Loading...</a>
+      <a class="check-basic-info" style="display:none;">Next Section ▷</a>
+      
+      <a class="btn btn-smartthings" style="display:none;">Next Section ▷</a>
+      <a class="check-token-available" style="display:none;">Check Token Available ▷</a>
+
+      <a class="btn btn-amazon-echo" style="display:none;">Next Section ▷</a>
+      <a class="check-amazon-echo-data" style="display:none;">Get Alexa Data ▷</a>
+
+      <a class="final-button" style="display:none;">Show Data ▷</a>
+      
+    </div>
+
+  </form>
+
+  <!-- jQuery 3 -->
+  <script> window.$ = window.jQuery = require('../dist/js/jquery-3.3.1.min.js'); </script>
+
+  <script src="../dist/js/timezone-picker.min.js"></script>
+  <script src="../dist/js/getInfoPage.js"></script>
+
+</body>
+</html>
