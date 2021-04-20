@@ -16,7 +16,7 @@ kombu==4.1.0
 Logbook==1.1.0
 lxml==4.1.1
 MarkupSafe==1.0
-py==1.5.2
+py==1.10.0
 pyshark==0.3.7.11
 pytz==2017.3
 redis==2.10.6
@@ -27,7 +27,7 @@ urllib3==1.22
 vine==1.1.4
 Werkzeug==0.14.1
 Logbook==1.1.0
-py==1.5.2
+py==1.10.0
 pyshark==0.3.7.11
 SQLAlchemy==1.2.1
 trollius==1.0.4
