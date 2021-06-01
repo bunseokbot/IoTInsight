@@ -23,7 +23,7 @@ redis==2.10.6
 requests==2.18.4
 selenium==3.8.1
 trollius==1.0.4
-urllib3==1.22
+urllib3==1.26.5
 vine==1.1.4
 Werkzeug==0.14.1
 Logbook==1.1.0
