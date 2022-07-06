@@ -14,7 +14,7 @@ itsdangerous==0.24
 Jinja2==2.10
 kombu==4.1.0
 Logbook==1.1.0
-lxml==4.1.1
+lxml==4.9.1
 MarkupSafe==1.0
 py==1.5.2
 pyshark==0.3.7.11
