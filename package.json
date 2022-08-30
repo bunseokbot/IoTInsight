@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment-timezone": "^0.5.14",
+    "moment-timezone": "^0.5.35",
     "oui": "^7.0.27",
     "sqlite3": "^3.1.13",
     "dedupe": "^2.1.0",
